@@ -1,7 +1,6 @@
-### 👨‍💻 Augusto Ojeda Mathe
+# 👨‍💻 Augusto Ojeda Mathe
 
-¡Hola!
-Me llamo Augusto, soy un fanatico de la tecnología, el desarrollo y la optimización. Actualmente estoy enfocado en mejorar mis habilidades técnicas y explorar nuevas herramientas de automatización y sistemas operativos.
+Hola, me llamo Augusto, soy un fanático de la tecnología, el desarrollo y la optimización. Actualmente estoy enfocado en mejorar mis habilidades técnicas y explorar nuevas herramientas de automatización y sistemas operativos.
 
 ---
 
@@ -45,6 +44,4 @@ Me llamo Augusto, soy un fanatico de la tecnología, el desarrollo y la optimiza
 
 Si te interesa mi perfil o quieres colaborar en algún proyecto:
 
-- [LinkedIn]([https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/) - [Email](mailto:augustoojedamathe@gmail.com)
-
----
+- [LinkedIn](https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/)
