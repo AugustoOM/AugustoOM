@@ -1,7 +1,7 @@
 # Augusto Ojeda Mathe
 
 <p align="left">
-  <img src="https://unpkg.com/lucide-static@latest/icons/code-2.svg" width="22" alt="Code icon" />
+  <img src="icons/code-2.svg" width="22" alt="Code icon" />
 </p>
 
 Hola, me llamo **Augusto Ojeda Mathe**. Soy estudiante de Ingeniería en Sistemas, apasionado por la tecnología, el desarrollo de software, la automatización y la optimización de sistemas.
@@ -10,7 +10,7 @@ Actualmente estoy enfocado en seguir mejorando mis habilidades técnicas, explor
 
 ---
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/user.svg" width="20" alt="User icon" /> Sobre mí
+## <img src="icons/user.svg" width="20" alt="User icon" /> Sobre mí
 
 - **Estudios:** Estudiante de Ingeniería en Sistemas.
 - **Estado laboral:** Abierto a escuchar ofertas de trabajo y oportunidades de colaboración.
@@ -20,7 +20,7 @@ Actualmente estoy enfocado en seguir mejorando mis habilidades técnicas, explor
 
 ---
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/wrench.svg" width="20" alt="Tools icon" /> Tech Stack
+## <img src="icons/wrench.svg" width="20" alt="Tools icon" /> Tech Stack
 
 ### Lenguajes y herramientas que uso
 
@@ -40,7 +40,7 @@ Actualmente estoy enfocado en seguir mejorando mis habilidades técnicas, explor
 
 ---
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/bar-chart-3.svg" width="20" alt="Stats icon" /> Estadísticas de GitHub
+## <img src="icons/bar-chart-3.svg" width="20" alt="Stats icon" /> Estadísticas de GitHub
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=AugustoOM&show_icons=true&theme=radical" alt="Estadísticas de GitHub de AugustoOM" />
@@ -52,7 +52,7 @@ Actualmente estoy enfocado en seguir mejorando mis habilidades técnicas, explor
 
 ---
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/folder-git-2.svg" width="20" alt="Projects icon" /> Enfoque actual
+## <img src="icons/folder-git-2.svg" width="20" alt="Projects icon" /> Enfoque actual
 
 Estoy trabajando en fortalecer mis conocimientos en desarrollo web, automatización y administración de entornos Linux, con el objetivo de crear soluciones útiles, simples y eficientes.
 
@@ -60,7 +60,7 @@ Me interesa especialmente el desarrollo de herramientas que ayuden a resolver pr
 
 ---
 
-## <img src="https://unpkg.com/lucide-static@latest/icons/mail.svg" width="20" alt="Contact icon" /> Contacto
+## <img src="icons/mail.svg" width="20" alt="Contact icon" /> Contacto
 
 Si te interesa mi perfil, quieres colaborar en algún proyecto o tienes una oportunidad laboral, puedes contactarme por LinkedIn:
 
