@@ -4,7 +4,7 @@
   <img src="icons/code-2.svg" width="22" alt="Código" />
 </p>
 
-Hola, soy **Augusto Ojeda Mathe**, estudiante de **Ingeniería en Sistemas**. Desarrollo aplicaciones web y de escritorio, herramientas educativas y soluciones de automatización.
+Hola, soy **Augusto Ojeda Mathe**, estudiante de **Ingeniería en Sistemas de la Información**. Desarrollo aplicaciones web, nativas y de escritorio, herramientas educativas y soluciones de automatización.
 
 Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfaces web, motores de simulación y aplicaciones nativas. También trabajo con **Rust y Tauri**, y con **C++ y WinUI 3** para Windows.
 
@@ -12,11 +12,11 @@ Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfac
 
 ## <img src="icons/user.svg" width="20" alt="Perfil" /> Sobre mí
 
-- **Estudios:** Ingeniería en Sistemas.
+- **Estudios:** Ingeniería en Sistemas de la Información.
 - **Disponibilidad:** Abierto a oportunidades laborales y de colaboración.
 - **Intereses:** Desarrollo de software, automatización, lenguajes formales, simulación y herramientas open source.
 - **En mis proyectos:** Pruebas automatizadas, separación de responsabilidades, documentación y flujos de integración continua.
-- **Sigo aprendiendo:** Automatización con **n8n** y administración de sistemas **Linux**.
+- **Actualmente aprendiendo:** Administración de sistemas **Linux** con **CachyOS**.
 
 ---
 
@@ -42,7 +42,7 @@ Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfac
 | Pruebas y calidad | Vitest, Jest, Playwright, Testing Library, Supertest, JUnit, k6, ESLint, Prettier |
 | Desarrollo e infraestructura | Git, GitHub Actions, Docker, pnpm, Turborepo, AWS, Terraform |
 
-### Herramientas utilizadas en repositorios privados
+### Otras herramientas
 
 - **TypeScript, JavaScript, Python, Kotlin, React, Next.js, Vue, Svelte, SvelteKit, Vite y Tailwind CSS.**
 - **Node.js, Express, Flask, PostgreSQL, Prisma, Supabase, Redis, Socket.IO, Auth0, Auth.js y Better Auth.**
@@ -64,7 +64,6 @@ Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfac
 | [Suppy-Chain-Sim](https://github.com/AugustoOM/Suppy-Chain-Sim) | Simulador de producción de alimentos con inventario, estaciones, colas, métricas operativas y una vista 3D. | TypeScript, Vite, A-Frame |
 | [Talento Correntino](https://github.com/AugustoOM/Talento-Correntino) | Prototipo frontend de una tienda y un panel de gestión para productores y artesanos locales. | React, TypeScript, Tailwind CSS, Zustand, Vite |
 | [Base64 to QR](https://github.com/AugustoOM/Base64toQr) | Herramienta para generar códigos QR a partir de texto Base64, con decodificación opcional y modo interactivo. | Python, qrcode, Pillow |
-| [Dashboard para eventos](https://github.com/AugustoOM/Dashboard-para-eventos) | Dashboard de ventas de entradas e ingresos con gráficos y datos de ejemplo. | React, TypeScript, Vite |
 
 ### Colaboraciones y trabajos sobre proyectos existentes
 
