@@ -1,62 +1,50 @@
-# Augusto Ojeda Mathe
-
-<p align="left">
-  <img src="icons/code-2.svg" width="22" alt="Código" />
+<p align="center">
+  <img src="assets/poster.svg" width="100%" alt="Perfil de Augusto Ojeda Mathe (@AugustoOM) con estética de terminal roja y lluvia de caracteres" />
 </p>
 
-Hola, soy **Augusto Ojeda Mathe**, estudiante de **Ingeniería en Sistemas de la Información**. Desarrollo aplicaciones web, nativas y de escritorio, herramientas educativas y soluciones de automatización.
+[Sitio web](https://augustoojedamathe.com/) · [GitHub y actividad](https://github.com/AugustoOM) · [LinkedIn](https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/)
 
-Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfaces web, motores de simulación y aplicaciones nativas. También trabajo con **Rust y Tauri**, y con **C++ y WinUI 3** para Windows.
+## Proyectos destacados
 
----
+[JAuto](https://github.com/AugustoOM/Jauto) · [CF-Simplex](https://cf-simplex.vercel.app/) · [Human Typer](https://github.com/AugustoOM/Human-Typer)
 
-## <img src="icons/user.svg" width="20" alt="Perfil" /> Sobre mí
+<details>
+<summary>Leer el perfil en texto</summary>
 
-- **Estudios:** Ingeniería en Sistemas de la Información.
-- **Disponibilidad:** Abierto a oportunidades laborales y de colaboración.
-- **Intereses:** Desarrollo de software, automatización, lenguajes formales, simulación y herramientas open source.
-- **En mis proyectos:** Pruebas automatizadas, separación de responsabilidades, documentación y flujos de integración continua.
-- **Actualmente aprendiendo:** Administración de sistemas **Linux** con **CachyOS**.
+Soy **Augusto Ojeda Mathe** (@AugustoOM), desarrollador de software y estudiante de **Ingeniería en Sistemas de la Información** en Argentina. Desarrollo aplicaciones web, nativas y de escritorio, herramientas educativas y soluciones de automatización. Me interesan los lenguajes formales, la simulación y el software de código abierto. Estoy abierto a oportunidades laborales y de colaboración.
 
----
+- **Lenguajes** · JavaScript, TypeScript, Python, Java, Rust, C++ y Kotlin
+- **Frontend** · React, Vue y Vite
+- **Backend y datos** · Node.js, Express, FastAPI y PostgreSQL
+- **Herramientas** · Git, GitHub, Docker y n8n
+- **En aprendizaje** · Linux
 
-## <img src="icons/wrench.svg" width="20" alt="Herramientas" /> Stack actual
+En mis proyectos uso pruebas automatizadas, separación de responsabilidades, documentación y flujos de integración continua. Estoy aprendiendo administración de sistemas Linux con CachyOS.
 
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-</p>
+JAuto permite diseñar y simular autómatas y máquinas de Turing. CF-Simplex resuelve problemas de programación lineal por el método Simplex, con vistas primal y dual. Human Typer escribe texto carácter por carácter en documentos y planillas mediante una utilidad de escritorio y una extensión web.
+
+</details>
+
+<details>
+<summary>Más tecnologías, proyectos y colaboraciones</summary>
+
+### Tecnologías y herramientas
 
 | Área | Tecnologías y herramientas |
 | --- | --- |
 | Frontend | React, Next.js, Vue 3, Svelte, SvelteKit, Tailwind CSS, Vite |
-| Backend | Node.js, Express, Hono, Flask |
+| Backend | Node.js, Express, Hono, Flask, FastAPI, Socket.IO, Auth0, Auth.js y Better Auth |
 | Datos | PostgreSQL, Prisma, Supabase, Redis, Dexie / IndexedDB |
 | Escritorio | Tauri 2, Rust, C++20, C++/WinRT, WinUI 3, Windows App SDK |
-| Móvil | React Native, Expo, Kotlin, Jetpack Compose, Gradle |
+| Móvil | React Native, Expo, Kotlin, Jetpack Compose, Material 3, AndroidX DataStore, Kotlin Coroutines, Gradle |
 | Cálculo y visualización | NumPy, pandas, SymPy, Matplotlib, Plotly, Chart.js, Canvas API, A-Frame |
 | Pruebas y calidad | Vitest, Jest, Playwright, Testing Library, Supertest, JUnit, k6, ESLint, Prettier |
-| Desarrollo e infraestructura | Git, GitHub Actions, Docker, pnpm, Turborepo, AWS, Terraform |
+| Desarrollo e infraestructura | Git, GitHub Actions, Docker, n8n, pnpm, Turborepo, AWS, Terraform |
 
-### Otras herramientas
-
-- **TypeScript, JavaScript, Python, Kotlin, React, Next.js, Vue, Svelte, SvelteKit, Vite y Tailwind CSS.**
-- **Node.js, Express, Flask, PostgreSQL, Prisma, Supabase, Redis, Socket.IO, Auth0, Auth.js y Better Auth.**
-- **React Native, Expo, Jetpack Compose, Material 3, AndroidX DataStore, Kotlin Coroutines y Gradle.**
-- **NumPy, pandas, SymPy, Matplotlib, Plotly, Dexie, Vitest, Jest, Playwright, Testing Library, Supertest, JUnit y GitHub Actions.**
-
----
-
-## <img src="icons/folder-git-2.svg" width="20" alt="Proyectos" /> Proyectos públicos destacados
+### Otros proyectos públicos
 
 | Proyecto | Descripción breve | Stack |
 | --- | --- | --- |
-| [Human Typer](https://github.com/AugustoOM/Human-Typer) | Utilidad de escritorio para escribir texto automáticamente con ritmo configurable e importar documentos y hojas de cálculo. | Tauri 2, Rust, React, TypeScript, Vite |
-| [JAuto](https://github.com/AugustoOM/Jauto) | Editor y simulador de autómatas finitos, de pila y máquinas de Turing, con importación y exportación de archivos JFLAP; disponible para web y escritorio. | TypeScript, Vue 3, Tauri 2, Rust, pnpm, Turborepo |
 | [CF-Clock](https://github.com/AugustoOM/CF-Clock) | Aplicación nativa de reloj para Windows con formatos personalizables, calendario, alarmas y temporizadores. | C++20, C++/WinRT, WinUI 3 |
 | [Compilador CuencaLang](https://github.com/AugustoOM/Compilador-CuencaLang) | Lenguaje, compilador a bytecode y máquina virtual basada en pila, con análisis léxico, sintáctico y semántico. | Python, unittest |
 | [ProbabilityLab](https://github.com/AugustoOM/Distribuciones-de-Probabilidad) | Calculadora interactiva de distribuciones continuas y discretas con probabilidades, tablas y gráficos exportables. | TypeScript, Vite, Canvas API |
@@ -74,20 +62,20 @@ Mis trabajos recientes combinan **TypeScript, JavaScript y Python** con interfac
 | [Simulador de AFD y APD](https://github.com/AugustoOM/Simulador-de-Automatas-Finitos-Deterministas-AFD) | Fork con mejoras para diseñar autómatas, evaluar cadenas y visualizar transiciones y trazas de pila. | JavaScript, Vue 3, Bootstrap, Cytoscape.js |
 | [Nutriscone-testing](https://github.com/AugustoOM/Nutriscone-testing) | Fork de una aplicación de encuestas y estadísticas, con pruebas de extremo a extremo y de carga. | Next.js, React, TypeScript, Supabase, Chart.js, Playwright, k6 |
 
----
+</details>
 
-## <img src="icons/bar-chart-3.svg" width="20" alt="Estadísticas" /> Estadísticas de GitHub
+<details>
+<summary>Regenerar el póster</summary>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AugustoOM&show_icons=true&theme=radical" alt="Estadísticas de GitHub de AugustoOM" />
-</p>
+Editá [config/profile.json](config/profile.json) para actualizar el perfil, los proyectos, la paleta o la lluvia. Si agregás un enlace verificado, incorporalo también al README. Usá Python 3.13 o posterior desde la raíz del repositorio.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AugustoOM&layout=compact&theme=radical" alt="Lenguajes más usados por AugustoOM en repositorios públicos" />
-</p>
+```sh
+python tools/poster.py
+python tools/validate_poster.py
+```
 
----
+La generación funciona sin conexión. El workflow **Actualizar póster del perfil** se ejecuta a las 09:00 UTC, al cambiar el generador o su configuración en `main` y manualmente desde **Actions → Actualizar póster del perfil → Run workflow**. Solo registra `assets/poster.svg` cuando cambia. Si falla la escritura, revisá **Settings → Actions → General → Workflow permissions** y las reglas de `main`. Si la rama exige un pull request, regenerá el SVG y envialo por esa vía.
 
-## <img src="icons/mail.svg" width="20" alt="Contacto" /> Contacto
+El panel de actividad enlaza al calendario del perfil. Para una segunda etapa, se puede consultar `user.contributionsCollection.contributionCalendar` en GraphQL. Primero hay que comprobar en Actions que `GITHUB_TOKEN` pueda leer el calendario y que los datos sean exclusivamente públicos. Si hace falta una credencial adicional de solo lectura, configurala como secreto `PROFILE_ACTIVITY_TOKEN` en **Settings → Secrets and variables → Actions → New repository secret** y pasala por entorno al paso que consulte la actividad. Ante errores, datos incompletos o contribuciones privadas, se debe conservar el enlace al calendario.
 
-Si querés colaborar, conversar sobre mis proyectos o compartir una oportunidad laboral, podés contactarme por [LinkedIn](https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/).
+</details>

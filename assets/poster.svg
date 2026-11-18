@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="es" width="960" height="2072" viewBox="0 0 960 2072" role="img" aria-label="Perfil de Augusto Ojeda Mathe (@AugustoOM)" aria-describedby="poster-description">
+  <title>Augusto Ojeda Mathe · @AugustoOM</title>
+  <desc id="poster-description">Software Developer · Systems Engineering Student · Argentina. Presentación, tecnologías, proyectos, actividad y contacto en una terminal oscura con lluvia roja.</desc>
+  <style>
+:root { --background: #050507; --panel: #0D0D12; --accent: #FF3131; --secondary: #B91427; --deep: #4A0A13; --text: #E8E8EA; --muted: #85858F; --border: #342027; }
+svg {
+  color-scheme: dark;
+  font-family: ui-monospace, "Cascadia Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  background: var(--background);
+}
+text { fill: var(--text); }
+.strong { font-weight: 700; }
+.name { font-weight: 800; }
+.muted { fill: var(--muted); }
+.accent { fill: var(--accent); }
+.panel { fill: var(--panel); stroke: var(--border); }
+.card { fill: var(--background); stroke: var(--border); }
+.frame, .rule { fill: none; stroke: var(--border); }
+.prompt { fill: none; stroke: var(--accent); stroke-width: 1.8; }
+.rain-trail { fill: url(#rain-tail); }
+.rain-tip { fill: var(--accent); opacity: .58; }
+.rain-column { animation: fall var(--duration) var(--phase) linear infinite; }
+.boot-line { animation: boot .65s var(--delay) ease-out both; }
+.cursor { animation: cursor 2.4s ease-in-out infinite; }
+a:hover .link, a:focus-visible .link { text-decoration: underline; }
+@keyframes fall { to { transform: translateY(var(--tile)); } }
+@keyframes boot {
+  from { opacity: .55; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cursor { 50% { opacity: .28; } }
+@media (prefers-reduced-motion: reduce) {
+  .rain-column, .boot-line, .cursor { animation: none; }
+  .rain { opacity: .34; }
+}
+</style>
+  <defs>
+    <linearGradient id="hero-ambient" x1="100%" y1="0%" x2="38%" y2="100%">
+      <stop offset="0%" stop-color="var(--deep)" stop-opacity="0.47" />
+      <stop offset="100%" stop-color="var(--deep)" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0 H0 V32" fill="none" stroke="var(--border)" opacity=".48" />
+    </pattern>
+    <linearGradient id="rain-tail" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="var(--secondary)" stop-opacity="0.13" />
+      <stop offset="65%" stop-color="var(--secondary)" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="rain-side-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.8" />
+      <stop offset="9%" stop-color="#fff" stop-opacity="1" />
+      <stop offset="34%" stop-color="#fff" stop-opacity="0.18" />
+      <stop offset="63%" stop-color="#fff" stop-opacity="0.24" />
+      <stop offset="90%" stop-color="#fff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.85" />
+    </linearGradient>
+    <mask id="rain-side-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="960" height="2072">
+      <rect x="0" y="0" width="960" height="2072" fill="url(#rain-side-fade)" />
+    </mask>
+    <linearGradient id="rain-end-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.2" />
+      <stop offset="7%" stop-color="#fff" stop-opacity="1" />
+      <stop offset="74%" stop-color="#fff" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.12" />
+    </linearGradient>
+    <mask id="rain-end-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="960" height="2072">
+      <rect x="0" y="0" width="960" height="2072" fill="url(#rain-end-fade)" />
+    </mask>
+    <g id="stream-0">
+      <text x="9 9 9 9 9 9 9" y="33" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16">&lt;D&lt;XKEE</text>
+      <text x="9" y="145" font-size="15" class="rain-tip">E</text>
+    </g>
+    <g id="stream-1">
+      <text x="36 36 36 36 36 36 36 36 36 36 36" y="29" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16 16">A:/0+#SP&lt;/&gt;</text>
+      <text x="36" y="205" font-size="15" class="rain-tip">&gt;</text>
+    </g>
+    <g id="stream-2">
+      <text x="57 57 57 57 57 57 57 57 57" y="3" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17">HDA:&lt;/1VF</text>
+      <text x="57" y="156" font-size="15" class="rain-tip">F</text>
+    </g>
+    <g id="stream-3">
+      <text x="77 77 77 77 77 77 77 77 77 77" y="223" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18 18 18">01BHB#CH+A</text>
+      <text x="77" y="403" font-size="15" class="rain-tip">A</text>
+    </g>
+    <g id="stream-4">
+      <text x="101 101 101 101 101 101 101" y="120" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16">X+P*F1C</text>
+      <text x="101" y="232" font-size="15" class="rain-tip">C</text>
+    </g>
+    <g id="stream-5">
+      <text x="125 125 125 125 125 125 125 125 125" y="81" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15 15">PXX*/##10</text>
+      <text x="125" y="216" font-size="15" class="rain-tip">0</text>
+    </g>
+    <g id="stream-6">
+      <text x="150 150 150 150 150 150 150 150 150 150" y="148" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16">EF1:R/NNE+</text>
+      <text x="150" y="308" font-size="15" class="rain-tip">+</text>
+    </g>
+    <g id="stream-7">
+      <text x="170 170 170 170 170 170 170 170" y="22" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17">DHRSDRPN</text>
+      <text x="170" y="158" font-size="15" class="rain-tip">N</text>
+    </g>
+    <g id="stream-8">
+      <text x="197 197 197 197 197 197 197 197" y="32" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18">V1BEV*&gt;P</text>
+      <text x="197" y="176" font-size="15" class="rain-tip">P</text>
+    </g>
+    <g id="stream-9">
+      <text x="217 217 217 217 217 217 217 217" y="157" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18">/AFBKPB/</text>
+      <text x="217" y="301" font-size="15" class="rain-tip">/</text>
+    </g>
+    <g id="stream-10">
+      <text x="242 242 242 242 242 242 242 242 242 242" y="201" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15 15 15">XC#//KNSTD</text>
+      <text x="242" y="351" font-size="15" class="rain-tip">D</text>
+    </g>
+    <g id="stream-11">
+      <text x="262 262 262 262 262 262 262 262 262 262 262 262 262" y="114" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16 16 16 16">#E/T/K+/+&lt;PPE</text>
+      <text x="262" y="322" font-size="15" class="rain-tip">E</text>
+    </g>
+    <g id="stream-12">
+      <text x="286 286 286 286 286 286 286 286 286 286" y="231" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18 18 18">HC&gt;B&lt;*&lt;XVH</text>
+      <text x="286" y="411" font-size="15" class="rain-tip">H</text>
+    </g>
+    <g id="stream-13">
+      <text x="310 310 310 310 310 310 310 310 310 310 310 310" y="79" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18 18 18 18 18">0&gt;+F#BKDDF0D</text>
+      <text x="310" y="295" font-size="15" class="rain-tip">D</text>
+    </g>
+    <g id="stream-14">
+      <text x="329 329 329 329 329 329 329 329 329 329 329 329 329" y="198" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17 17 17 17 17">:0E*&gt;X&gt;0+1CHN</text>
+      <text x="329" y="419" font-size="15" class="rain-tip">N</text>
+    </g>
+    <g id="stream-15">
+      <text x="352 352 352 352 352 352 352 352 352 352" y="179" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15 15 15">*E+RH*#V:A</text>
+      <text x="352" y="329" font-size="15" class="rain-tip">A</text>
+    </g>
+    <g id="stream-16">
+      <text x="374 374 374 374 374 374 374" y="95" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18">1PTBPCV</text>
+      <text x="374" y="221" font-size="15" class="rain-tip">V</text>
+    </g>
+    <g id="stream-17">
+      <text x="398 398 398 398 398 398 398 398" y="227" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15">##N&lt;A0:&lt;</text>
+      <text x="398" y="347" font-size="15" class="rain-tip">&lt;</text>
+    </g>
+    <g id="stream-18">
+      <text x="423 423 423 423 423 423 423 423 423 423 423 423" y="232" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17 17 17 17">KX*DE1:D*VPT</text>
+      <text x="423" y="436" font-size="15" class="rain-tip">T</text>
+    </g>
+    <g id="stream-19">
+      <text x="448 448 448 448 448 448 448 448" y="65" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18">/SNAFTK&lt;</text>
+      <text x="448" y="209" font-size="15" class="rain-tip">&lt;</text>
+    </g>
+    <g id="stream-20">
+      <text x="471 471 471 471 471 471 471" y="15" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18">ES+ER#A</text>
+      <text x="471" y="141" font-size="15" class="rain-tip">A</text>
+    </g>
+    <g id="stream-21">
+      <text x="492 492 492 492 492 492 492 492 492 492 492 492" y="232" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18 18 18 18 18">:&lt;1RB*NH:KF&lt;</text>
+      <text x="492" y="448" font-size="15" class="rain-tip">&lt;</text>
+    </g>
+    <g id="stream-22">
+      <text x="514 514 514 514 514 514 514 514 514 514 514 514 514" y="24" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17 17 17 17 17">HFNB&lt;&gt;:NB#D/X</text>
+      <text x="514" y="245" font-size="15" class="rain-tip">X</text>
+    </g>
+    <g id="stream-23">
+      <text x="536 536 536 536 536 536 536 536" y="144" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17">D#&lt;&lt;K+01</text>
+      <text x="536" y="280" font-size="15" class="rain-tip">1</text>
+    </g>
+    <g id="stream-24">
+      <text x="561 561 561 561 561 561 561 561 561 561 561" y="92" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15 15 15 15">K0EFEDPEAAN</text>
+      <text x="561" y="257" font-size="15" class="rain-tip">N</text>
+    </g>
+    <g id="stream-25">
+      <text x="583 583 583 583 583 583 583" y="106" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17">0#/KNKP</text>
+      <text x="583" y="225" font-size="15" class="rain-tip">P</text>
+    </g>
+    <g id="stream-26">
+      <text x="605 605 605 605 605 605 605 605 605 605 605 605 605" y="136" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15 15 15 15 15 15 15">*+C#0+:PS:NV/</text>
+      <text x="605" y="331" font-size="15" class="rain-tip">/</text>
+    </g>
+    <g id="stream-27">
+      <text x="630 630 630 630 630 630 630 630" y="242" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17">KN0#&gt;&lt;NH</text>
+      <text x="630" y="378" font-size="15" class="rain-tip">H</text>
+    </g>
+    <g id="stream-28">
+      <text x="653 653 653 653 653 653 653" y="180" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17">&lt;&lt;&gt;0V1S</text>
+      <text x="653" y="299" font-size="15" class="rain-tip">S</text>
+    </g>
+    <g id="stream-29">
+      <text x="674 674 674 674 674 674 674 674 674 674 674" y="30" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16 16">#RB&lt;+P*NF&gt;&gt;</text>
+      <text x="674" y="206" font-size="15" class="rain-tip">&gt;</text>
+    </g>
+    <g id="stream-30">
+      <text x="697 697 697 697 697 697 697 697 697 697 697" y="9" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16 16">1CEAPERXKH:</text>
+      <text x="697" y="185" font-size="15" class="rain-tip">:</text>
+    </g>
+    <g id="stream-31">
+      <text x="722 722 722 722 722 722 722" y="44" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18">VK:BX&lt;#</text>
+      <text x="722" y="170" font-size="15" class="rain-tip">#</text>
+    </g>
+    <g id="stream-32">
+      <text x="745 745 745 745 745 745 745" y="244" font-size="15" class="rain-trail" dy="0 15 15 15 15 15 15">FS+KXVP</text>
+      <text x="745" y="349" font-size="15" class="rain-tip">P</text>
+    </g>
+    <g id="stream-33">
+      <text x="768 768 768 768 768 768" y="32" font-size="15" class="rain-trail" dy="0 16 16 16 16 16">XE#&gt;0&gt;</text>
+      <text x="768" y="128" font-size="15" class="rain-tip">&gt;</text>
+    </g>
+    <g id="stream-34">
+      <text x="788 788 788 788 788 788 788 788 788 788" y="4" font-size="15" class="rain-trail" dy="0 16 16 16 16 16 16 16 16 16">D&gt;+EKPTSPH</text>
+      <text x="788" y="164" font-size="15" class="rain-tip">H</text>
+    </g>
+    <g id="stream-35">
+      <text x="814 814 814 814 814 814 814 814 814 814 814 814" y="34" font-size="15" class="rain-trail" dy="0 18 18 18 18 18 18 18 18 18 18 18">#T+A/A/&lt;0&gt;NR</text>
+      <text x="814" y="250" font-size="15" class="rain-tip">R</text>
+    </g>
+    <g id="stream-36">
+      <text x="834 834 834 834 834 834" y="69" font-size="15" class="rain-trail" dy="0 16 16 16 16 16">AP/1+B</text>
+      <text x="834" y="165" font-size="15" class="rain-tip">B</text>
+    </g>
+    <g id="stream-37">
+      <text x="859 859 859 859 859 859 859" y="55" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17">&lt;D0ATEK</text>
+      <text x="859" y="174" font-size="15" class="rain-tip">K</text>
+    </g>
+    <g id="stream-38">
+      <text x="878 878 878 878 878 878" y="107" font-size="15" class="rain-trail" dy="0 18 18 18 18 18">&lt;&lt;DRHD</text>
+      <text x="878" y="215" font-size="15" class="rain-tip">D</text>
+    </g>
+    <g id="stream-39">
+      <text x="901 901 901 901 901 901" y="60" font-size="15" class="rain-trail" dy="0 17 17 17 17 17">FVX1SP</text>
+      <text x="901" y="162" font-size="15" class="rain-tip">P</text>
+    </g>
+    <g id="stream-40">
+      <text x="929 929 929 929 929 929 929 929 929" y="245" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17">&lt;1F&lt;NA&lt;&lt;V</text>
+      <text x="929" y="398" font-size="15" class="rain-tip">V</text>
+    </g>
+    <g id="stream-41">
+      <text x="952 952 952 952 952 952 952 952 952 952 952" y="158" font-size="15" class="rain-trail" dy="0 17 17 17 17 17 17 17 17 17 17">/TK&lt;FBNB0BP</text>
+      <text x="952" y="345" font-size="15" class="rain-tip">P</text>
+    </g>
+  </defs>
+  <rect width="960" height="2072" fill="var(--background)" />
+  <rect x="25" y="25" width="910" height="490" fill="url(#hero-ambient)" />
+  <rect x="634" y="90" width="301" height="301" fill="url(#grid)" />
+  <g class="rain" mask="url(#rain-side-mask)" aria-hidden="true">
+    <g mask="url(#rain-end-mask)">
+      <g class="rain-column" opacity="0.384" style="--duration:16.498s;--phase:-14.033s;--tile:480px">
+        <use href="#stream-0" y="-960" />
+        <use href="#stream-0" y="-480" />
+        <use href="#stream-0" y="0" />
+        <use href="#stream-0" y="480" />
+        <use href="#stream-0" y="960" />
+        <use href="#stream-0" y="1440" />
+        <use href="#stream-0" y="1920" />
+        <use href="#stream-0" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.494" style="--duration:18.912s;--phase:-11.204s;--tile:480px">
+        <use href="#stream-1" y="-960" />
+        <use href="#stream-1" y="-480" />
+        <use href="#stream-1" y="0" />
+        <use href="#stream-1" y="480" />
+        <use href="#stream-1" y="960" />
+        <use href="#stream-1" y="1440" />
+        <use href="#stream-1" y="1920" />
+        <use href="#stream-1" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.362" style="--duration:17.999s;--phase:-4.221s;--tile:480px">
+        <use href="#stream-2" y="-960" />
+        <use href="#stream-2" y="-480" />
+        <use href="#stream-2" y="0" />
+        <use href="#stream-2" y="480" />
+        <use href="#stream-2" y="960" />
+        <use href="#stream-2" y="1440" />
+        <use href="#stream-2" y="1920" />
+        <use href="#stream-2" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.279" style="--duration:23.045s;--phase:-18.659s;--tile:480px">
+        <use href="#stream-3" y="-960" />
+        <use href="#stream-3" y="-480" />
+        <use href="#stream-3" y="0" />
+        <use href="#stream-3" y="480" />
+        <use href="#stream-3" y="960" />
+        <use href="#stream-3" y="1440" />
+        <use href="#stream-3" y="1920" />
+        <use href="#stream-3" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.479" style="--duration:33.033s;--phase:-1.795s;--tile:480px">
+        <use href="#stream-4" y="-960" />
+        <use href="#stream-4" y="-480" />
+        <use href="#stream-4" y="0" />
+        <use href="#stream-4" y="480" />
+        <use href="#stream-4" y="960" />
+        <use href="#stream-4" y="1440" />
+        <use href="#stream-4" y="1920" />
+        <use href="#stream-4" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.442" style="--duration:35.919s;--phase:-26.241s;--tile:480px">
+        <use href="#stream-5" y="-960" />
+        <use href="#stream-5" y="-480" />
+        <use href="#stream-5" y="0" />
+        <use href="#stream-5" y="480" />
+        <use href="#stream-5" y="960" />
+        <use href="#stream-5" y="1440" />
+        <use href="#stream-5" y="1920" />
+        <use href="#stream-5" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.472" style="--duration:32.779s;--phase:-16.793s;--tile:480px">
+        <use href="#stream-6" y="-960" />
+        <use href="#stream-6" y="-480" />
+        <use href="#stream-6" y="0" />
+        <use href="#stream-6" y="480" />
+        <use href="#stream-6" y="960" />
+        <use href="#stream-6" y="1440" />
+        <use href="#stream-6" y="1920" />
+        <use href="#stream-6" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.282" style="--duration:31.223s;--phase:-24.994s;--tile:480px">
+        <use href="#stream-7" y="-960" />
+        <use href="#stream-7" y="-480" />
+        <use href="#stream-7" y="0" />
+        <use href="#stream-7" y="480" />
+        <use href="#stream-7" y="960" />
+        <use href="#stream-7" y="1440" />
+        <use href="#stream-7" y="1920" />
+        <use href="#stream-7" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.545" style="--duration:25.497s;--phase:-1.952s;--tile:480px">
+        <use href="#stream-8" y="-960" />
+        <use href="#stream-8" y="-480" />
+        <use href="#stream-8" y="0" />
+        <use href="#stream-8" y="480" />
+        <use href="#stream-8" y="960" />
+        <use href="#stream-8" y="1440" />
+        <use href="#stream-8" y="1920" />
+        <use href="#stream-8" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.310" style="--duration:17.342s;--phase:-11.967s;--tile:480px">
+        <use href="#stream-9" y="-960" />
+        <use href="#stream-9" y="-480" />
+        <use href="#stream-9" y="0" />
+        <use href="#stream-9" y="480" />
+        <use href="#stream-9" y="960" />
+        <use href="#stream-9" y="1440" />
+        <use href="#stream-9" y="1920" />
+        <use href="#stream-9" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.644" style="--duration:24.584s;--phase:-1.987s;--tile:480px">
+        <use href="#stream-10" y="-960" />
+        <use href="#stream-10" y="-480" />
+        <use href="#stream-10" y="0" />
+        <use href="#stream-10" y="480" />
+        <use href="#stream-10" y="960" />
+        <use href="#stream-10" y="1440" />
+        <use href="#stream-10" y="1920" />
+        <use href="#stream-10" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.525" style="--duration:28.996s;--phase:-2.978s;--tile:480px">
+        <use href="#stream-11" y="-960" />
+        <use href="#stream-11" y="-480" />
+        <use href="#stream-11" y="0" />
+        <use href="#stream-11" y="480" />
+        <use href="#stream-11" y="960" />
+        <use href="#stream-11" y="1440" />
+        <use href="#stream-11" y="1920" />
+        <use href="#stream-11" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.531" style="--duration:35.148s;--phase:-26.913s;--tile:480px">
+        <use href="#stream-12" y="-960" />
+        <use href="#stream-12" y="-480" />
+        <use href="#stream-12" y="0" />
+        <use href="#stream-12" y="480" />
+        <use href="#stream-12" y="960" />
+        <use href="#stream-12" y="1440" />
+        <use href="#stream-12" y="1920" />
+        <use href="#stream-12" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.477" style="--duration:30.337s;--phase:-10.538s;--tile:480px">
+        <use href="#stream-13" y="-960" />
+        <use href="#stream-13" y="-480" />
+        <use href="#stream-13" y="0" />
+        <use href="#stream-13" y="480" />
+        <use href="#stream-13" y="960" />
+        <use href="#stream-13" y="1440" />
+        <use href="#stream-13" y="1920" />
+        <use href="#stream-13" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.251" style="--duration:31.788s;--phase:-13.583s;--tile:480px">
+        <use href="#stream-14" y="-960" />
+        <use href="#stream-14" y="-480" />
+        <use href="#stream-14" y="0" />
+        <use href="#stream-14" y="480" />
+        <use href="#stream-14" y="960" />
+        <use href="#stream-14" y="1440" />
+        <use href="#stream-14" y="1920" />
+        <use href="#stream-14" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.661" style="--duration:26.212s;--phase:-7.410s;--tile:480px">
+        <use href="#stream-15" y="-960" />
+        <use href="#stream-15" y="-480" />
+        <use href="#stream-15" y="0" />
+        <use href="#stream-15" y="480" />
+        <use href="#stream-15" y="960" />
+        <use href="#stream-15" y="1440" />
+        <use href="#stream-15" y="1920" />
+        <use href="#stream-15" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.293" style="--duration:32.618s;--phase:-11.191s;--tile:480px">
+        <use href="#stream-16" y="-960" />
+        <use href="#stream-16" y="-480" />
+        <use href="#stream-16" y="0" />
+        <use href="#stream-16" y="480" />
+        <use href="#stream-16" y="960" />
+        <use href="#stream-16" y="1440" />
+        <use href="#stream-16" y="1920" />
+        <use href="#stream-16" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.491" style="--duration:20.445s;--phase:-17.853s;--tile:480px">
+        <use href="#stream-17" y="-960" />
+        <use href="#stream-17" y="-480" />
+        <use href="#stream-17" y="0" />
+        <use href="#stream-17" y="480" />
+        <use href="#stream-17" y="960" />
+        <use href="#stream-17" y="1440" />
+        <use href="#stream-17" y="1920" />
+        <use href="#stream-17" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.255" style="--duration:31.749s;--phase:-27.619s;--tile:480px">
+        <use href="#stream-18" y="-960" />
+        <use href="#stream-18" y="-480" />
+        <use href="#stream-18" y="0" />
+        <use href="#stream-18" y="480" />
+        <use href="#stream-18" y="960" />
+        <use href="#stream-18" y="1440" />
+        <use href="#stream-18" y="1920" />
+        <use href="#stream-18" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.549" style="--duration:33.590s;--phase:-25.147s;--tile:480px">
+        <use href="#stream-19" y="-960" />
+        <use href="#stream-19" y="-480" />
+        <use href="#stream-19" y="0" />
+        <use href="#stream-19" y="480" />
+        <use href="#stream-19" y="960" />
+        <use href="#stream-19" y="1440" />
+        <use href="#stream-19" y="1920" />
+        <use href="#stream-19" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.444" style="--duration:18.032s;--phase:-13.495s;--tile:480px">
+        <use href="#stream-20" y="-960" />
+        <use href="#stream-20" y="-480" />
+        <use href="#stream-20" y="0" />
+        <use href="#stream-20" y="480" />
+        <use href="#stream-20" y="960" />
+        <use href="#stream-20" y="1440" />
+        <use href="#stream-20" y="1920" />
+        <use href="#stream-20" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.342" style="--duration:36.027s;--phase:-1.656s;--tile:480px">
+        <use href="#stream-21" y="-960" />
+        <use href="#stream-21" y="-480" />
+        <use href="#stream-21" y="0" />
+        <use href="#stream-21" y="480" />
+        <use href="#stream-21" y="960" />
+        <use href="#stream-21" y="1440" />
+        <use href="#stream-21" y="1920" />
+        <use href="#stream-21" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.660" style="--duration:22.407s;--phase:-1.207s;--tile:480px">
+        <use href="#stream-22" y="-960" />
+        <use href="#stream-22" y="-480" />
+        <use href="#stream-22" y="0" />
+        <use href="#stream-22" y="480" />
+        <use href="#stream-22" y="960" />
+        <use href="#stream-22" y="1440" />
+        <use href="#stream-22" y="1920" />
+        <use href="#stream-22" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.293" style="--duration:35.389s;--phase:-1.782s;--tile:480px">
+        <use href="#stream-23" y="-960" />
+        <use href="#stream-23" y="-480" />
+        <use href="#stream-23" y="0" />
+        <use href="#stream-23" y="480" />
+        <use href="#stream-23" y="960" />
+        <use href="#stream-23" y="1440" />
+        <use href="#stream-23" y="1920" />
+        <use href="#stream-23" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.499" style="--duration:27.452s;--phase:-25.839s;--tile:480px">
+        <use href="#stream-24" y="-960" />
+        <use href="#stream-24" y="-480" />
+        <use href="#stream-24" y="0" />
+        <use href="#stream-24" y="480" />
+        <use href="#stream-24" y="960" />
+        <use href="#stream-24" y="1440" />
+        <use href="#stream-24" y="1920" />
+        <use href="#stream-24" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.390" style="--duration:21.142s;--phase:-0.543s;--tile:480px">
+        <use href="#stream-25" y="-960" />
+        <use href="#stream-25" y="-480" />
+        <use href="#stream-25" y="0" />
+        <use href="#stream-25" y="480" />
+        <use href="#stream-25" y="960" />
+        <use href="#stream-25" y="1440" />
+        <use href="#stream-25" y="1920" />
+        <use href="#stream-25" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.565" style="--duration:28.166s;--phase:-25.786s;--tile:480px">
+        <use href="#stream-26" y="-960" />
+        <use href="#stream-26" y="-480" />
+        <use href="#stream-26" y="0" />
+        <use href="#stream-26" y="480" />
+        <use href="#stream-26" y="960" />
+        <use href="#stream-26" y="1440" />
+        <use href="#stream-26" y="1920" />
+        <use href="#stream-26" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.359" style="--duration:26.823s;--phase:-23.874s;--tile:480px">
+        <use href="#stream-27" y="-960" />
+        <use href="#stream-27" y="-480" />
+        <use href="#stream-27" y="0" />
+        <use href="#stream-27" y="480" />
+        <use href="#stream-27" y="960" />
+        <use href="#stream-27" y="1440" />
+        <use href="#stream-27" y="1920" />
+        <use href="#stream-27" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.492" style="--duration:24.028s;--phase:-3.819s;--tile:480px">
+        <use href="#stream-28" y="-960" />
+        <use href="#stream-28" y="-480" />
+        <use href="#stream-28" y="0" />
+        <use href="#stream-28" y="480" />
+        <use href="#stream-28" y="960" />
+        <use href="#stream-28" y="1440" />
+        <use href="#stream-28" y="1920" />
+        <use href="#stream-28" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.403" style="--duration:28.883s;--phase:-5.787s;--tile:480px">
+        <use href="#stream-29" y="-960" />
+        <use href="#stream-29" y="-480" />
+        <use href="#stream-29" y="0" />
+        <use href="#stream-29" y="480" />
+        <use href="#stream-29" y="960" />
+        <use href="#stream-29" y="1440" />
+        <use href="#stream-29" y="1920" />
+        <use href="#stream-29" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.365" style="--duration:18.955s;--phase:-4.893s;--tile:480px">
+        <use href="#stream-30" y="-960" />
+        <use href="#stream-30" y="-480" />
+        <use href="#stream-30" y="0" />
+        <use href="#stream-30" y="480" />
+        <use href="#stream-30" y="960" />
+        <use href="#stream-30" y="1440" />
+        <use href="#stream-30" y="1920" />
+        <use href="#stream-30" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.271" style="--duration:17.209s;--phase:-13.443s;--tile:480px">
+        <use href="#stream-31" y="-960" />
+        <use href="#stream-31" y="-480" />
+        <use href="#stream-31" y="0" />
+        <use href="#stream-31" y="480" />
+        <use href="#stream-31" y="960" />
+        <use href="#stream-31" y="1440" />
+        <use href="#stream-31" y="1920" />
+        <use href="#stream-31" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.484" style="--duration:30.314s;--phase:-4.433s;--tile:480px">
+        <use href="#stream-32" y="-960" />
+        <use href="#stream-32" y="-480" />
+        <use href="#stream-32" y="0" />
+        <use href="#stream-32" y="480" />
+        <use href="#stream-32" y="960" />
+        <use href="#stream-32" y="1440" />
+        <use href="#stream-32" y="1920" />
+        <use href="#stream-32" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.295" style="--duration:36.568s;--phase:-12.072s;--tile:480px">
+        <use href="#stream-33" y="-960" />
+        <use href="#stream-33" y="-480" />
+        <use href="#stream-33" y="0" />
+        <use href="#stream-33" y="480" />
+        <use href="#stream-33" y="960" />
+        <use href="#stream-33" y="1440" />
+        <use href="#stream-33" y="1920" />
+        <use href="#stream-33" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.302" style="--duration:31.894s;--phase:-21.693s;--tile:480px">
+        <use href="#stream-34" y="-960" />
+        <use href="#stream-34" y="-480" />
+        <use href="#stream-34" y="0" />
+        <use href="#stream-34" y="480" />
+        <use href="#stream-34" y="960" />
+        <use href="#stream-34" y="1440" />
+        <use href="#stream-34" y="1920" />
+        <use href="#stream-34" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.528" style="--duration:26.630s;--phase:-15.649s;--tile:480px">
+        <use href="#stream-35" y="-960" />
+        <use href="#stream-35" y="-480" />
+        <use href="#stream-35" y="0" />
+        <use href="#stream-35" y="480" />
+        <use href="#stream-35" y="960" />
+        <use href="#stream-35" y="1440" />
+        <use href="#stream-35" y="1920" />
+        <use href="#stream-35" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.267" style="--duration:24.677s;--phase:-15.976s;--tile:480px">
+        <use href="#stream-36" y="-960" />
+        <use href="#stream-36" y="-480" />
+        <use href="#stream-36" y="0" />
+        <use href="#stream-36" y="480" />
+        <use href="#stream-36" y="960" />
+        <use href="#stream-36" y="1440" />
+        <use href="#stream-36" y="1920" />
+        <use href="#stream-36" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.498" style="--duration:19.093s;--phase:-13.886s;--tile:480px">
+        <use href="#stream-37" y="-960" />
+        <use href="#stream-37" y="-480" />
+        <use href="#stream-37" y="0" />
+        <use href="#stream-37" y="480" />
+        <use href="#stream-37" y="960" />
+        <use href="#stream-37" y="1440" />
+        <use href="#stream-37" y="1920" />
+        <use href="#stream-37" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.571" style="--duration:14.955s;--phase:-9.417s;--tile:480px">
+        <use href="#stream-38" y="-960" />
+        <use href="#stream-38" y="-480" />
+        <use href="#stream-38" y="0" />
+        <use href="#stream-38" y="480" />
+        <use href="#stream-38" y="960" />
+        <use href="#stream-38" y="1440" />
+        <use href="#stream-38" y="1920" />
+        <use href="#stream-38" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.471" style="--duration:26.256s;--phase:-20.483s;--tile:480px">
+        <use href="#stream-39" y="-960" />
+        <use href="#stream-39" y="-480" />
+        <use href="#stream-39" y="0" />
+        <use href="#stream-39" y="480" />
+        <use href="#stream-39" y="960" />
+        <use href="#stream-39" y="1440" />
+        <use href="#stream-39" y="1920" />
+        <use href="#stream-39" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.628" style="--duration:35.917s;--phase:-21.839s;--tile:480px">
+        <use href="#stream-40" y="-960" />
+        <use href="#stream-40" y="-480" />
+        <use href="#stream-40" y="0" />
+        <use href="#stream-40" y="480" />
+        <use href="#stream-40" y="960" />
+        <use href="#stream-40" y="1440" />
+        <use href="#stream-40" y="1920" />
+        <use href="#stream-40" y="2400" />
+      </g>
+      <g class="rain-column" opacity="0.381" style="--duration:26.473s;--phase:-2.288s;--tile:480px">
+        <use href="#stream-41" y="-960" />
+        <use href="#stream-41" y="-480" />
+        <use href="#stream-41" y="0" />
+        <use href="#stream-41" y="480" />
+        <use href="#stream-41" y="960" />
+        <use href="#stream-41" y="1440" />
+        <use href="#stream-41" y="1920" />
+        <use href="#stream-41" y="2400" />
+      </g>
+    </g>
+  </g>
+  <path class="frame" d="M24 24 H920 L936 40 V2048 H24 Z" />
+  <path d="M24 68 V24 h73 M936 67 V40 l-16 -16 h-32" fill="none" stroke="var(--secondary)" stroke-width="2" />
+  <line x1="25" y1="89" x2="935" y2="89" class="rule" />
+  <line x1="40" y1="106" x2="40" y2="2025" class="rule" />
+  <path d="M54 50 l8 7 -8 7 m14 0 h10" class="prompt" />
+  <text x="91" y="65" font-size="21" class="strong">AugustoOM@github:~</text>
+  <text x="908" y="65" font-size="18" class="muted" text-anchor="end">~/profile</text>
+  <text x="80" y="2023" font-size="21" class="accent strong">&gt;</text>
+  <text x="106" y="2023" font-size="21" class="muted">session established</text>
+  <rect x="365" y="2010" width="10" height="14" class="cursor" fill="var(--accent)" />
+  <g>
+    <g class="boot-line" style="--delay:0ms">
+      <text x="80" y="133" font-size="21" class="accent strong">&gt;</text>
+      <text x="106" y="133" font-size="21" class="muted">initializing profile...</text>
+    </g>
+    <g class="boot-line" style="--delay:180ms">
+      <text x="80" y="161" font-size="21" class="accent strong">&gt;</text>
+      <text x="106" y="161" font-size="21" class="muted">loading modules...</text>
+    </g>
+    <g class="boot-line" style="--delay:360ms">
+      <text x="80" y="189" font-size="21" class="accent strong">&gt;</text>
+      <text x="106" y="189" font-size="21" class="muted">access granted</text>
+    </g>
+    <g transform="translate(783 267)" aria-hidden="true">
+      <path d="M-104 -47 v-27 l28 -28 h26 M50 -102 h26 l28 28 v27 M104 47 v27 l-28 28 h-26 M-50 102 h-26 l-28 -28 v-27" fill="none" stroke="var(--secondary)" opacity=".72" />
+      <path d="M-72 -49 l23 -23 h98 l23 23 v98 l-23 23 h-98 l-23 -23 Z" fill="var(--deep)" fill-opacity=".36" stroke="var(--deep)" />
+      <path d="M-94 0 h14 m160 0 h14 M0 -94 v14 m0 160 v14" fill="none" stroke="var(--secondary)" opacity=".75" />
+      <path d="M-36 -20 l24 20 -24 20 M0 22 h33" fill="none" stroke="var(--accent)" stroke-width="6" opacity=".74" />
+    </g>
+    <text x="77" y="282" font-size="82" class="name">AUGUSTO</text>
+    <text x="77" y="363" font-size="82" class="name">OJEDA MATHE</text>
+    <text x="80" y="411" font-size="27" class="accent strong">@AugustoOM</text>
+    <text x="80" y="446" font-size="20" class="">Software Developer · Systems Engineering Student · Argentina</text>
+    <path class="panel" d="M52 486 H892 L908 502 V713 H52 Z" />
+    <path d="M80 517 l8 7 -8 7" class="prompt" />
+    <text x="105" y="532" font-size="27" class="strong">Sobre mí</text>
+    <text x="80" y="574" font-size="23" class="">Estudio Ingeniería en Sistemas y me interesa el</text>
+    <text x="80" y="607" font-size="23" class="">desarrollo web, la automatización y el software de</text>
+    <text x="80" y="640" font-size="23" class="">código abierto. Estoy abierto a oportunidades</text>
+    <text x="80" y="673" font-size="23" class="">laborales y de colaboración.</text>
+    <path class="panel" d="M52 737 H892 L908 753 V1083 H52 Z" />
+    <g>
+      <path d="M80 768 l8 7 -8 7" class="prompt" />
+      <text x="105" y="783" font-size="27" class="strong">Stack tecnológico</text>
+      <line x1="80" y1="815" x2="459" y2="815" class="rule" />
+      <text x="80" y="840" font-size="17" class="accent strong">LENGUAJES</text>
+      <text x="80" y="870" font-size="21" class="">JavaScript · TypeScript</text>
+      <text x="80" y="897" font-size="21" class="">Python · Java</text>
+      <line x1="504" y1="815" x2="880" y2="815" class="rule" />
+      <text x="504" y="840" font-size="17" class="accent strong">FRONTEND</text>
+      <text x="504" y="870" font-size="21" class="">React · Vue · Vite</text>
+      <line x1="80" y1="921" x2="459" y2="921" class="rule" />
+      <text x="80" y="946" font-size="17" class="accent strong">BACKEND</text>
+      <text x="80" y="976" font-size="21" class="">Node.js · Express · FastAPI</text>
+      <line x1="504" y1="921" x2="880" y2="921" class="rule" />
+      <text x="504" y="946" font-size="17" class="accent strong">BASES DE DATOS</text>
+      <text x="504" y="976" font-size="21" class="">PostgreSQL</text>
+      <line x1="80" y1="1000" x2="459" y2="1000" class="rule" />
+      <text x="80" y="1025" font-size="17" class="accent strong">HERRAMIENTAS</text>
+      <text x="80" y="1055" font-size="21" class="">Git · GitHub · Docker · n8n</text>
+      <line x1="504" y1="1000" x2="880" y2="1000" class="rule" />
+      <text x="504" y="1025" font-size="17" class="accent strong">EN APRENDIZAJE</text>
+      <text x="504" y="1055" font-size="21" class="">Linux</text>
+    </g>
+    <path d="M80 1126 l8 7 -8 7" class="prompt" />
+    <text x="105" y="1141" font-size="27" class="strong">Proyectos destacados</text>
+    <a href="https://github.com/AugustoOM/Jauto" aria-label="JAuto">
+      <path class="card" d="M52 1161 H892 L908 1177 V1325 H52 Z" />
+      <rect x="52" y="1183" width="3" height="30" fill="var(--secondary)" />
+      <text x="80" y="1206" font-size="28" class="strong link">JAuto</text>
+      <path d="M862 1199 l12 -12 m-10 0 h10 v10" class="prompt" />
+      <text x="80" y="1241" font-size="22" class="">Herramienta web y de escritorio para diseñar y simular</text>
+      <text x="80" y="1270" font-size="22" class="">autómatas y máquinas de Turing.</text>
+      <text x="80" y="1301" font-size="18" class="muted">TypeScript · Vue · Tauri</text>
+    </a>
+    <a href="https://cf-simplex.vercel.app/" aria-label="CF-Simplex">
+      <path class="card" d="M52 1337 H892 L908 1353 V1501 H52 Z" />
+      <rect x="52" y="1359" width="3" height="30" fill="var(--secondary)" />
+      <text x="80" y="1382" font-size="28" class="strong link">CF-Simplex</text>
+      <path d="M862 1375 l12 -12 m-10 0 h10 v10" class="prompt" />
+      <text x="80" y="1417" font-size="22" class="">Aplicación web que resuelve problemas de programación</text>
+      <text x="80" y="1446" font-size="22" class="">lineal por el método Simplex, con vistas primal y dual.</text>
+      <text x="80" y="1477" font-size="18" class="muted">Vue · Plotly</text>
+    </a>
+    <a href="https://github.com/AugustoOM/Human-Typer" aria-label="Human Typer">
+      <path class="card" d="M52 1513 H892 L908 1529 V1677 H52 Z" />
+      <rect x="52" y="1535" width="3" height="30" fill="var(--secondary)" />
+      <text x="80" y="1558" font-size="28" class="strong link">Human Typer</text>
+      <path d="M862 1551 l12 -12 m-10 0 h10 v10" class="prompt" />
+      <text x="80" y="1593" font-size="22" class="">Utilidad de escritorio y extensión web para escribir</text>
+      <text x="80" y="1622" font-size="22" class="">texto carácter por carácter en documentos y planillas.</text>
+      <text x="80" y="1653" font-size="18" class="muted">TypeScript · React · Tauri · Rust</text>
+    </a>
+    <path class="panel" d="M52 1701 H892 L908 1717 V1847 H52 Z" />
+    <path d="M80 1732 l8 7 -8 7" class="prompt" />
+    <text x="105" y="1747" font-size="27" class="strong">Actividad en GitHub</text>
+    <text x="80" y="1786" font-size="22" class="">Contribuciones del último año</text>
+    <a href="https://github.com/AugustoOM" aria-label="Ver contribuciones en el perfil de GitHub">
+      <text x="80" y="1820" font-size="20" class="accent link">Ver calendario en el perfil</text>
+      <path d="M404 1818 l12 -12 m-10 0 h10 v10" class="prompt" />
+    </a>
+    <path d="M765 1745 h97 v62 h-97 Z M786 1764 l12 11 -12 11 M808 1787 h27" fill="none" stroke="var(--secondary)" opacity=".82" aria-hidden="true" />
+    <path class="panel" d="M52 1871 H892 L908 1887 V1987 H52 Z" />
+    <g>
+      <path d="M80 1900 l8 7 -8 7" class="prompt" />
+      <text x="105" y="1915" font-size="27" class="strong">Contacto</text>
+      <line x1="80" y1="1930" x2="880" y2="1930" class="rule" />
+      <a href="https://augustoojedamathe.com/" aria-label="Sitio web">
+        <text x="80" y="1962" font-size="20" class="link">Sitio web</text>
+        <path d="M202 1961 l12 -12 m-10 0 h10 v10" class="prompt" />
+      </a>
+      <a href="https://github.com/AugustoOM" aria-label="GitHub">
+        <text x="249" y="1962" font-size="20" class="link">GitHub / @AugustoOM</text>
+        <path d="M499 1961 l12 -12 m-10 0 h10 v10" class="prompt" />
+      </a>
+      <a href="https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/" aria-label="LinkedIn">
+        <text x="546" y="1962" font-size="20" class="link">LinkedIn</text>
+        <path d="M655 1961 l12 -12 m-10 0 h10 v10" class="prompt" />
+      </a>
+    </g>
+  </g>
+</svg>

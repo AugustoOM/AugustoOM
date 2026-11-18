@@ -1,0 +1,60 @@
+{
+  "name": "Augusto Ojeda Mathe",
+  "github_user": "AugustoOM",
+  "role": "Software Developer",
+  "studies": "Systems Engineering Student",
+  "location": "Argentina",
+  "about": "Estudio Ingeniería en Sistemas y me interesa el desarrollo web, la automatización y el software de código abierto. Estoy abierto a oportunidades laborales y de colaboración.",
+  "stack": {
+    "Lenguajes": ["JavaScript", "TypeScript", "Python", "Java"],
+    "Frontend": ["React", "Vue", "Vite"],
+    "Backend": ["Node.js", "Express", "FastAPI"],
+    "Bases de datos": ["PostgreSQL"],
+    "Herramientas": ["Git", "GitHub", "Docker", "n8n"],
+    "En aprendizaje": ["Linux"]
+  },
+  "projects": [
+    {
+      "name": "JAuto",
+      "description": "Herramienta web y de escritorio para diseñar y simular autómatas y máquinas de Turing.",
+      "technologies": ["TypeScript", "Vue", "Tauri"],
+      "url": "https://github.com/AugustoOM/Jauto"
+    },
+    {
+      "name": "CF-Simplex",
+      "description": "Aplicación web que resuelve problemas de programación lineal por el método Simplex, con vistas primal y dual.",
+      "technologies": ["Vue", "Plotly"],
+      "url": "https://cf-simplex.vercel.app/"
+    },
+    {
+      "name": "Human Typer",
+      "description": "Utilidad de escritorio y extensión web para escribir texto carácter por carácter en documentos y planillas.",
+      "technologies": ["TypeScript", "React", "Tauri", "Rust"],
+      "url": "https://github.com/AugustoOM/Human-Typer"
+    }
+  ],
+  "contact": {
+    "github": "https://github.com/AugustoOM",
+    "linkedin": "https://www.linkedin.com/in/augusto-ojeda-mathe-771044156/",
+    "portfolio": "https://augustoojedamathe.com/"
+  },
+  "palette": {
+    "background": "#050507",
+    "panel": "#0D0D12",
+    "accent": "#FF3131",
+    "secondary": "#B91427",
+    "deep": "#4A0A13",
+    "text": "#E8E8EA",
+    "muted": "#85858F",
+    "border": "#342027"
+  },
+  "terminal": {
+    "boot": ["initializing profile...", "loading modules...", "access granted"],
+    "exit": "session established"
+  },
+  "rain": {
+    "seed": 3407,
+    "columns": 42,
+    "speed": 1.0
+  }
+}

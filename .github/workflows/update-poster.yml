@@ -1,0 +1,54 @@
+name: Actualizar póster del perfil
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "config/**"
+      - ".github/workflows/update-poster.yml"
+
+permissions: {}
+
+concurrency:
+  group: update-poster
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      # Activity links to the public profile, so regeneration has no API dependency.
+      - name: Generar y validar el SVG
+        run: |
+          python -m compileall -q tools
+          python tools/poster.py
+          python tools/validate_poster.py
+      - name: Registrar cambios del póster
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git add -- assets/poster.svg
+          if git diff --cached --quiet --exit-code -- assets/poster.svg; then
+            echo "El póster ya está actualizado."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Actualizar póster del perfil" -- assets/poster.svg
+          if ! git push origin "HEAD:refs/heads/${DEFAULT_BRANCH}"; then
+            echo "::error::No se pudo actualizar la rama. Revisá los permisos y las reglas de la rama, o reejecutá el workflow si cambió mientras se generaba el póster."
+            exit 1
+          fi
