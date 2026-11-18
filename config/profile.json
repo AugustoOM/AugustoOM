@@ -7,11 +7,11 @@
   "about": "Estudio Ingeniería en Sistemas y me interesa el desarrollo web, la automatización y el software de código abierto. Estoy abierto a oportunidades laborales y de colaboración.",
   "stack": {
     "Lenguajes": ["JavaScript", "TypeScript", "Python", "Java"],
-    "Frontend": ["React", "Vue", "Vite"],
+    "Frontend": ["React", "Vue", "Svelte", "Vite"],
     "Backend": ["Node.js", "Express", "FastAPI"],
-    "Bases de datos": ["PostgreSQL"],
+    "Bases de datos": ["PostgreSQL", "Prisma"],
     "Herramientas": ["Git", "GitHub", "Docker", "n8n"],
-    "En aprendizaje": ["Linux"]
+    "En aprendizaje": ["Linux", "Rust"]
   },
   "projects": [
     {

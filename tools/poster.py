@@ -6,13 +6,14 @@ import re
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from urllib.parse import urlsplit
-from xml.etree.ElementTree import Element, fromstring, indent, tostring
+from xml.etree.ElementTree import Element, SubElement, fromstring, indent, parse, tostring
 
 from matrix_rain import add_rain
 from svg_components import arrow, gradient, heading, label, line, node, panel, paragraph, wrapped
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config/profile.json"
+ICON_DIRECTORY = CONFIG.parent / "icons"
 OUTPUT = ROOT / "assets/poster.svg"
 SVG_NS = "http://www.w3.org/2000/svg"
 WIDTH = 960
@@ -21,6 +22,28 @@ LEFT, RIGHT = 80, 880
 GAP = 24
 COLORS = ("background", "panel", "accent", "secondary", "deep", "text", "muted", "border")
 CONTACT_LABELS = {"portfolio": "Sitio web", "github": "GitHub", "linkedin": "LinkedIn"}
+STACK_ICONS = {
+    "JavaScript": "javascript",
+    "TypeScript": "typescript",
+    "Python": "python",
+    "Java": "java",
+    "C++": "c-plusplus",
+    "Kotlin": "kotlin",
+    "Node.js": "nodejs",
+    "Express": "express",
+    "React": "react",
+    "Vue": "vue",
+    "Svelte": "svelte",
+    "Vite": "vite",
+    "PostgreSQL": "postgresql",
+    "Prisma": "prisma",
+    "Git": "git",
+    "GitHub": "github",
+    "Docker": "docker",
+    "n8n": "n8n",
+    "Linux": "archlinux",
+    "Rust": "rust",
+}
 
 CSS = """
 svg {
@@ -33,6 +56,7 @@ text { fill: var(--text); }
 .name { font-weight: 800; }
 .muted { fill: var(--muted); }
 .accent { fill: var(--accent); }
+.stack-icon { color: var(--accent); }
 .panel { fill: var(--panel); stroke: var(--border); }
 .card { fill: var(--background); stroke: var(--border); }
 .frame, .rule { fill: none; stroke: var(--border); }
@@ -155,6 +179,45 @@ def about(parent, y, profile):
     return y + height
 
 
+def add_stack_symbols(defs, icon_names):
+    for name in icon_names:
+        icon = parse(ICON_DIRECTORY / f"{name}.svg").getroot()
+        paths = icon.findall(f"{{{SVG_NS}}}path")
+        if not paths:
+            raise ValueError(f"El icono {name}.svg no tiene trazados")
+        symbol = node(defs, "symbol", id=f"stack-{name}", viewBox=icon.attrib["viewBox"],
+                      fill="currentColor")
+        for path in paths:
+            attributes = {key: value for key, value in path.attrib.items()
+                          if key in {"d", "fill-rule", "clip-rule", "stroke", "stroke-width", "stroke-linejoin"}}
+            SubElement(symbol, "path", attributes)
+
+
+def stack_values(parent, x, y, width, technologies):
+    if not any(name in STACK_ICONS for name in technologies):
+        lines = [value.strip(" ·") for value in wrapped(" · ".join(technologies), width, 21)]
+        paragraph(parent, x, y, lines, 21, 27)
+        return y + (len(lines) - 1) * 27
+
+    column_width = width // 2
+    for index in range(0, len(technologies), 2):
+        if index:
+            y += 30
+        row_lines = 1
+        for column, name in enumerate(technologies[index:index + 2]):
+            left = x + column * column_width
+            icon = STACK_ICONS.get(name)
+            offset = 28 if icon else 0
+            if icon:
+                node(parent, "use", href=f"#stack-{icon}", x=left, y=y - 18,
+                     width=22, height=22, cls="stack-icon", aria_hidden="true")
+            lines = wrapped(name, column_width - offset - 8, 20)
+            paragraph(parent, left + offset, y, lines, 20, 27)
+            row_lines = max(row_lines, len(lines))
+        y += (row_lines - 1) * 27
+    return y
+
+
 def stack(parent, y, groups):
     content = Element("g")
     heading(content, LEFT, y + 46, "Stack tecnológico")
@@ -167,12 +230,11 @@ def stack(parent, y, groups):
             ((LEFT, 459), (504, RIGHT)), items[index:index + 2]
         ):
             titles = wrapped(title.upper(), right - x, 17)
-            lines = [line.strip(" ·") for line in wrapped(" · ".join(technologies), right - x, 21)]
             line(content, x, y, right, y)
             paragraph(content, x, y + 25, titles, 17, 22, "accent strong")
             values_y = y + 55 + (len(titles) - 1) * 22
-            paragraph(content, x, values_y, lines, 21, 27)
-            row_height = max(row_height, values_y - y + (len(lines) - 1) * 27 + 24)
+            last_line = stack_values(content, x, values_y, right - x, technologies)
+            row_height = max(row_height, last_line - y + 24)
         y += row_height
     panel(parent, PANEL_X, y_start, PANEL_WIDTH, y + 4 - y_start)
     parent.append(content)
@@ -284,9 +346,15 @@ def render(profile):
     node(root, "title", f"{name} · @{username}")
     node(root, "desc", f"{subtitle}. Presentación, tecnologías, proyectos, actividad y contacto "
          "en una terminal oscura con lluvia roja.", id="poster-description")
+    stack_names = {name for group in profile["stack"].values() for name in group}
+    icons = [slug for name, slug in STACK_ICONS.items() if name in stack_names]
+    if icons:
+        license_text = (ICON_DIRECTORY / "LICENSE").read_text(encoding="utf-8").strip()
+        node(root, "metadata", f"Iconos Devicons\n\n{license_text}")
     palette = " ".join(f"--{key}: {profile['palette'][key]};" for key in COLORS)
     node(root, "style", f"\n:root {{ {palette} }}{CSS}")
     defs = node(root, "defs")
+    add_stack_symbols(defs, icons)
     backdrop(root, defs, height)
     add_rain(root, defs, WIDTH, height, profile["rain"])
     chrome(root, height, username, profile["terminal"]["exit"])

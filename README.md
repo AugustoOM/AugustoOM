@@ -13,11 +13,32 @@
 
 Soy **Augusto Ojeda Mathe** (@AugustoOM), desarrollador de software y estudiante de **Ingeniería en Sistemas de la Información** en Argentina. Desarrollo aplicaciones web, nativas y de escritorio, herramientas educativas y soluciones de automatización. Me interesan los lenguajes formales, la simulación y el software de código abierto. Estoy abierto a oportunidades laborales y de colaboración.
 
-- **Lenguajes** · JavaScript, TypeScript, Python, Java, Rust, C++ y Kotlin
-- **Frontend** · React, Vue y Vite
-- **Backend y datos** · Node.js, Express, FastAPI y PostgreSQL
-- **Herramientas** · Git, GitHub, Docker y n8n
-- **En aprendizaje** · Linux
+- **Lenguajes** ·
+  <img src="config/icons/javascript.svg" width="16" height="16" alt="" /> JavaScript ·
+  <img src="config/icons/typescript.svg" width="16" height="16" alt="" /> TypeScript ·
+  <img src="config/icons/python.svg" width="16" height="16" alt="" /> Python ·
+  <img src="config/icons/java.svg" width="16" height="16" alt="" /> Java ·
+  <img src="config/icons/c-plusplus.svg" width="16" height="16" alt="" /> C++ ·
+  <img src="config/icons/kotlin.svg" width="16" height="16" alt="" /> Kotlin
+- **Frontend** ·
+  <img src="config/icons/react.svg" width="16" height="16" alt="" /> React ·
+  <img src="config/icons/vue.svg" width="16" height="16" alt="" /> Vue ·
+  <img src="config/icons/svelte.svg" width="16" height="16" alt="" /> Svelte ·
+  <img src="config/icons/vite.svg" width="16" height="16" alt="" /> Vite
+- **Backend** ·
+  <img src="config/icons/nodejs.svg" width="16" height="16" alt="" /> Node.js ·
+  <img src="config/icons/express.svg" width="16" height="16" alt="" /> Express · FastAPI
+- **Bases de datos** ·
+  <img src="config/icons/postgresql.svg" width="16" height="16" alt="" /> PostgreSQL ·
+  <img src="config/icons/prisma.svg" width="16" height="16" alt="" /> Prisma
+- **Herramientas** ·
+  <img src="config/icons/git.svg" width="16" height="16" alt="" /> Git ·
+  <img src="config/icons/github.svg" width="16" height="16" alt="" /> GitHub ·
+  <img src="config/icons/docker.svg" width="16" height="16" alt="" /> Docker ·
+  <img src="config/icons/n8n.svg" width="16" height="16" alt="" /> n8n
+- **En aprendizaje** ·
+  <img src="config/icons/archlinux.svg" width="16" height="16" alt="" /> Linux ·
+  <img src="config/icons/rust.svg" width="16" height="16" alt="" /> Rust
 
 En mis proyectos uso pruebas automatizadas, separación de responsabilidades, documentación y flujos de integración continua. Estoy aprendiendo administración de sistemas Linux con CachyOS.
 
@@ -35,7 +56,7 @@ JAuto permite diseñar y simular autómatas y máquinas de Turing. CF-Simplex re
 | Frontend | React, Next.js, Vue 3, Svelte, SvelteKit, Tailwind CSS, Vite |
 | Backend | Node.js, Express, Hono, Flask, FastAPI, Socket.IO, Auth0, Auth.js y Better Auth |
 | Datos | PostgreSQL, Prisma, Supabase, Redis, Dexie / IndexedDB |
-| Escritorio | Tauri 2, Rust, C++20, C++/WinRT, WinUI 3, Windows App SDK |
+| Escritorio | Tauri 2, C++20, C++/WinRT, WinUI 3, Windows App SDK |
 | Móvil | React Native, Expo, Kotlin, Jetpack Compose, Material 3, AndroidX DataStore, Kotlin Coroutines, Gradle |
 | Cálculo y visualización | NumPy, pandas, SymPy, Matplotlib, Plotly, Chart.js, Canvas API, A-Frame |
 | Pruebas y calidad | Vitest, Jest, Playwright, Testing Library, Supertest, JUnit, k6, ESLint, Prettier |
